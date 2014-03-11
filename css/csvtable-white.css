@@ -11,9 +11,6 @@ html {
   font-family: gothic;
   src: url('GOTHIC.TTF');
 }
-
-
-
 div {
 
 	width: 90%;
@@ -39,7 +36,7 @@ TABLE.CSVTable {
 
 /* Header */
 .smaller {
-	font-size: 1.3em gothic;
+	font-size: 1.0em gothic;
 	line-height: 1em;
 	vertical-align: top;
 }
@@ -67,7 +64,7 @@ TABLE.CSVTable THEAD TR {
 }
 TABLE.CSVTable TH {
 	font-family: gothic;
-	font-size: 1.5em;
+	font-size: 1.0em;
 }
 
 /* Table Cells */
