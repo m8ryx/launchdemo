@@ -34,7 +34,7 @@ TABLE.CSVTable {
 
 /* Header Text */
 .smaller {
-	font-size: 1.2em gothic;
+	font-size: 1.0em gothic;
 	color: rgb();
 	line-height: 1em;
 	vertical-align: top;
@@ -44,7 +44,7 @@ TABLE.CSVTable {
 TABLE.CSVTable THEAD TR {
 	background: ;
 	vertical-align: top;
-	line-height: 1em;
+	line-height: 0em;
 }
 
 TABLE.CSVTable TH {
