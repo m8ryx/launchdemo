@@ -11,6 +11,9 @@
 	<script type="text/javascript" src="js/jquery.tablesorter.dev.js"></script>
 	
 	<script>
+    $.get('year.html',function(data){
+      $("div#year").append(data);
+    })
 	$(function() {
 		$.get('outputMatrixChem.csv', function(data) {
 			('#CSVSource').html('<pre>' + data + '</pre>');
@@ -25,7 +28,9 @@
 	</script>
 </head>
 <body>
-
+  <br/>
+  <div id="year" class="text"></div>
+  <br/>
 <div id="CSVSource" class="source">
 </div>
 

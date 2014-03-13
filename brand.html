@@ -11,6 +11,10 @@
 	<script type="text/javascript" src="js/jquery.tablesorter.dev.js"></script>
 	
 	<script>
+    $.get('year.html',function(data){
+      $("div#year").append(data);
+    })
+
 	$(function() {
 		$.get('outputMatrixBrand.csv', function(data) {
 			('#CSVSource').html('<pre>' + data + '</pre>');
@@ -20,14 +24,14 @@
       loadingImage: 'images/loading.gif', 
       loadingText: 'Importing Brand results',
       startLine: 0, 
-      headers: ['<img src=\"images/brand_icon64.png\"><br><p id= "brand" class= "smaller">Brand</p></br>','<img src=\"images/ico_communityDK64.png\"><br><p class= "smaller">Brand Reputation</p></br>', '<img src=\"images/ico_revenueDK64.png\"><br><p class= "smaller">Revenue</p></br>', '<img src=\"images/ico_profitDK64.png\"><br><p class= "smaller">Profit</p></br>', '<img src=\"images/moneybagsDK64.png\"><br><p class= "smaller">Profit to Date</p></br>', '<img src=\"images/ico_priceDK64.png\"><br><p class= "smaller">Cost Per Unit</p></br>'] });
+      headers: ['<img src=\"images/brand_icon64.png\"><br><p id= "brand" class= "smaller">Brand</p><div id="year"></div></br>','<img src=\"images/ico_communityDK64.png\"><br><p class= "smaller">Brand Reputation</p></br>', '<img src=\"images/ico_revenueDK64.png\"><br><p class= "smaller">Revenue</p></br>', '<img src=\"images/ico_profitDK64.png\"><br><p class= "smaller">Profit</p></br>', '<img src=\"images/moneybagsDK64.png\"><br><p class= "smaller">Profit to Date</p></br>', '<img src=\"images/ico_priceDK64.png\"><br><p class= "smaller">Cost Per Unit</p></br>'] });
 	});
 	</script>
 </head>
 <body>
-
-
-
+  </br>
+    <div id="year" class="text"></div>
+    </br>
 <div id="CSVSource" class="source">
 </div>
 

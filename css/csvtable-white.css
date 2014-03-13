@@ -49,10 +49,13 @@ TABLE.CSVTable {
   color: rgb(224,113,31);
 }
 #year {
-	font-size: 1.0em gothic;
+  font-family: gothic;
+	font-size: 2.0em;
+  font-weight: bold;
 	color: rgb();
-	line-height: 1em;
+	line-height: 2em;
 	vertical-align: top;
+  text-align: center;
 }
 
 /* Header */
